@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1> Itworx Assessment </h1>
+    <h2> By: <a href="https://www.linkedin.com/in/florian-chazizi-191b00175/"
+                class="text-dark" target="_blank">Florian</a></h2>
+</div>
+
+<div class="container mt-5">
+    <h3 class="mb-4">In this page you will find the following things:</h3>
+
+    <div class="accordion" id="accordionExample">
+        <!-- First Layer -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    First Page
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>First Page:</strong> A simple form where the user can input three integer numbers. The logic on this page calculates the sum of all even numbers from the input, ignoring any odd numbers.
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Layer -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Second Page
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Second Page:</strong> A form where users can input a string, and the logic on this page reverses the order of the words in the string. Each word remains intact, but their order is reversed.
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Layer -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Third Page
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Third Page:</strong> This page allows users to input the length and width of a rectangle. It provides two buttons to calculate the area and the perimeter of the rectangle. Both results are displayed after submission.
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Layer -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Fourth Page
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Fourth Page:</strong> A form that allows users to input two different time ranges. The logic on this page calculates the overlapping time frame between the two ranges, and displays the result.
+                </div>
+            </div>
+        </div>
+
+        <!-- Fifth Layer -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Fifth Page
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Fifth Page:</strong> A performance test comparing the lookup time between a list and a `HashSet`. The test measures how quickly each data structure can find a specific item when working with a collection of 1,000,000 items.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

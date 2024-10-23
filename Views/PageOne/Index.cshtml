@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Page One";
+}
+
+<div class="d-flex justify-content-center">
+    <h1 class="border-bottom"> Page One </h1>
+</div>
+
+<form asp-action="Index" method="post" class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center my-4">Enter Three Numbers</h2>
+            <div class="form-group my-3">
+                <label for="number1">Number 1:</label>
+                <input type="number" class="form-control" id="number1" name="number1" required />
+            </div>
+            <div class="form-group my-3">
+                <label for="number2">Number 2:</label>
+                <input type="number" class="form-control" id="number2" name="number2" required />
+            </div>
+            <div class="form-group my-3">
+                <label for="number3">Number 3:</label>
+                <input type="number" class="form-control" id="number3" name="number3" required />
+            </div>
+            <button type="submit" class="btn btn-primary w-100 my-3">Calculate Sum of Numbers</button>
+            @if (ViewBag.Message != null)
+            {
+                <div class="alert alert-info my-3">
+                    @ViewBag.Message
+                </div>
+            }
+        </div>
+    </div>
+</form>

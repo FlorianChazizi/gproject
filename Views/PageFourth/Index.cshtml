@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Fourth Page";
+}
+
+<h2>Common Time Range Finder</h2>
+
+<form method="post" asp-action="CalculateCommonTime" class="container">
+    <div class="form-group">
+        <label for="timeRange1">Time Range 1 (e.g., 2023-05-01 09:00 - 12:00):</label>
+        <input type="text" class="form-control" id="timeRange1" name="timeRange1" placeholder="Enter first time range" required />
+    </div>
+
+    <div class="form-group my-3">
+        <label for="timeRange2">Time Range 2 (e.g., 2023-05-01 07:00 - 10:00):</label>
+        <input type="text" class="form-control" id="timeRange2" name="timeRange2" placeholder="Enter second time range" required />
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Find Common Time</button>
+    </div>
+</form>
+
+@if (ViewBag.Result != null)
+{
+    <div class="alert alert-info mt-3">
+        <strong>Common Time:</strong> @ViewBag.Result
+    </div>
+}

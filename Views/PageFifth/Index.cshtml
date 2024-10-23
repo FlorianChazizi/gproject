@@ -1,0 +1,53 @@
+@{
+    ViewData["Title"] = "Page Five";
+}
+
+<h2 class="d-flex justify-content-center">Performance Test: List vs HashSet</h2>
+<div class="d-flex justify-content-center">
+    <form method="post" asp-action="PerformTest">
+        <button type="submit" class="btn btn-primary mt-4">Run Performance Test</button>
+    </form>
+</div>
+@if (ViewBag.ListLookupTime != null && ViewBag.HashSetLookupTime != null)
+{
+    <div class="mt-4">
+        <h3 class="d-flex justify-content-center">Αποτελέσματα:</h3>
+        <div class="row col-12">
+            <div class="col-12 col-lg-4 col-md-4 offset-lg-2 border-bottom  text-center">
+                <p>Found in List: @ViewBag.FoundInList</p>
+                <p>List lookup time: @ViewBag.ListLookupTime ms</p>
+            </div>
+
+            <div class="col-12 col-lg-4 col-md-4 offset-lg-1 border-bottom  text-center">
+                <p>Found in HashSet: @ViewBag.FoundInSet</p>
+                <p>HashSet lookup time: @ViewBag.HashSetLookupTime ms</p>
+            </div>
+        </div>
+
+        <h3 class="d-flex justify-content-center mt-5">Διαφορές:</h3>
+        <div class="row col-12">
+            <div class="col-12 col-lg-4 col-md-4 offset-lg-2 border-bottom  text-center">
+                <p><u>Η κανονική λίστα (List)</u> είναι μια συλλογή που αποθηκεύει στοιχεία με τη σειρά που προστίθενται
+                    και επιτρέπει την επαναλαμβανόμενη εμφάνιση των ίδιων στοιχείων. Είναι ιδανική όταν χρειαζόμαστε
+                    να διατηρήσουμε τη σειρά των δεδομένων μας ή να έχουμε διπλότυπα στοιχεία. Ωστόσο,
+                    το μειονέκτημα της λίστας είναι ότι, αν θέλουμε να αναζητήσουμε ένα στοιχείο, η αναζήτηση
+                    πραγματοποιείται γραμμικά (με επανάληψη όλων των στοιχείων), κάτι που καθιστά το χρόνο
+                    αναζήτησης σχετικά αργό για μεγάλες λίστες, με πολυπλοκότητα χρόνου O(n),
+                    όπου n είναι ο αριθμός των στοιχείων στη λίστα.
+                </p>
+            </div>
+
+            <div class="col-12 col-lg-4 col-md-4 offset-lg-1 border-bottom  text-center">
+                <p><u>Η λίστα HashSet </u> είναι μια συλλογή που αποθηκεύει μόνο μοναδικά στοιχεία και δεν
+                    επιτρέπει διπλότυπα. Χρησιμοποιεί εσωτερικά πίνακα κατακερματισμού (hash table),
+                    κάτι που καθιστά την αναζήτηση, την εισαγωγή και τη διαγραφή στοιχείων εξαιρετικά
+                    γρήγορη, με πολυπλοκότητα χρόνου O(1) κατά μέσο όρο. Ωστόσο, δεν διατηρεί τη σειρά
+                    εισαγωγής των στοιχείων, και δεν είναι κατάλληλη αν χρειάζεται να υπάρχουν
+                    επαναλαμβανόμενα στοιχεία ή αν η σειρά των στοιχείων είναι σημαντική.
+                    Είναι ιδανική για περιπτώσεις όπου θέλουμε να αποθηκεύσουμε μοναδικά
+                    στοιχεία και να εκτελούμε γρήγορες αναζητήσεις.
+                </p>
+            </div>
+        </div>
+    </div>
+}
