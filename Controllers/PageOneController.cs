@@ -13,15 +13,27 @@ namespace gproject.Controllers
         [HttpPost]
         public IActionResult Index(int number1, int number2, int number3)
         {
-            int sum = number1 + number2 + number3;
-            if (sum % 2 == 0)
+
+            int sum = 0;  // initialize sum
+
+            if( number1 % 2 == 0 )
             {
-                ViewBag.Message = $"The sum of the numbers is even: {sum}.";
+                sum += number1;
             }
-            else
+
+            if( number2 % 2 == 0 )
             {
-                ViewBag.Message = $"Try to put some even number in the sum bag.";
+                sum += number2;
             }
+
+            if( number3 % 2 == 0 )
+            {
+                sum += number3;
+            }
+
+            ViewBag.Message = $"Το άθροισμα όλων τον ακεραίων είναι: {sum}";
+
+
             return View();
         }
     }

@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\CJohn\\.nuget\\packages\\": {}
+    "/home/florian/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CJohn\\Desktop\\dotnet\\gproject\\gproject.csproj",
+      "projectUniqueName": "/home/florian/Desktop/dotnet/gproject/gproject.csproj",
       "projectName": "gproject",
-      "projectPath": "C:\\Users\\CJohn\\Desktop\\dotnet\\gproject\\gproject.csproj",
-      "packagesPath": "C:\\Users\\CJohn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CJohn\\Desktop\\dotnet\\gproject\\obj\\",
+      "projectPath": "/home/florian/Desktop/dotnet/gproject/gproject.csproj",
+      "packagesPath": "/home/florian/.nuget/packages/",
+      "outputPath": "/home/florian/Desktop/dotnet/gproject/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\CJohn\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/florian/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,11 +38,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -67,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

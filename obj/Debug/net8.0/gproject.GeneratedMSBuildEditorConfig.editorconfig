@@ -9,63 +9,63 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = gproject
 build_property.RootNamespace = gproject
-build_property.ProjectDir = C:\Users\CJohn\Desktop\dotnet\gproject\
+build_property.ProjectDir = /home/florian/Desktop/dotnet/gproject/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\CJohn\Desktop\dotnet\gproject
+build_property.MSBuildProjectDirectory = /home/florian/Desktop/dotnet/gproject
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/CJohn/Desktop/dotnet/gproject/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/home/florian/Desktop/dotnet/gproject/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CJohn/Desktop/dotnet/gproject/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/home/florian/Desktop/dotnet/gproject/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CJohn/Desktop/dotnet/gproject/Views/Home/Why.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXaHkuY3NodG1s
+[/home/florian/Desktop/dotnet/gproject/Views/Home/Why.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9XaHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CJohn/Desktop/dotnet/gproject/Views/PageFifth/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZUZpZnRoXEluZGV4LmNzaHRtbA==
+[/home/florian/Desktop/dotnet/gproject/Views/PageFifth/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnZUZpZnRoL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CJohn/Desktop/dotnet/gproject/Views/PageFourth/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZUZvdXJ0aFxJbmRleC5jc2h0bWw=
+[/home/florian/Desktop/dotnet/gproject/Views/PageFourth/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnZUZvdXJ0aC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CJohn/Desktop/dotnet/gproject/Views/PageOne/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZU9uZVxJbmRleC5jc2h0bWw=
+[/home/florian/Desktop/dotnet/gproject/Views/PageOne/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnZU9uZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CJohn/Desktop/dotnet/gproject/Views/PageThree/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVRocmVlXEluZGV4LmNzaHRtbA==
+[/home/florian/Desktop/dotnet/gproject/Views/PageThree/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnZVRocmVlL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CJohn/Desktop/dotnet/gproject/Views/PageTwo/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVR3b1xJbmRleC5jc2h0bWw=
+[/home/florian/Desktop/dotnet/gproject/Views/PageTwo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnZVR3by9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CJohn/Desktop/dotnet/gproject/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/home/florian/Desktop/dotnet/gproject/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CJohn/Desktop/dotnet/gproject/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/home/florian/Desktop/dotnet/gproject/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CJohn/Desktop/dotnet/gproject/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/home/florian/Desktop/dotnet/gproject/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CJohn/Desktop/dotnet/gproject/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/home/florian/Desktop/dotnet/gproject/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CJohn/Desktop/dotnet/gproject/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-fm8h9j28qv
+[/home/florian/Desktop/dotnet/gproject/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-488n460ys5
