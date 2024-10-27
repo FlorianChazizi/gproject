@@ -29,3 +29,8 @@ C:\Users\CJohn\Desktop\dotnet\gproject\obj\Debug\net8.0\refint\gproject.dll
 C:\Users\CJohn\Desktop\dotnet\gproject\obj\Debug\net8.0\gproject.pdb
 C:\Users\CJohn\Desktop\dotnet\gproject\obj\Debug\net8.0\gproject.genruntimeconfig.cache
 C:\Users\CJohn\Desktop\dotnet\gproject\obj\Debug\net8.0\ref\gproject.dll
+C:\Users\CJohn\Desktop\dotnet\gproject\bin\Debug\net8.0\publish\web.config
+C:\Users\CJohn\Desktop\dotnet\gproject\bin\Debug\net8.0\publish\appsettings.Development.json
+C:\Users\CJohn\Desktop\dotnet\gproject\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\CJohn\Desktop\dotnet\gproject\bin\Debug\net8.0\publish\gproject.deps.json
+C:\Users\CJohn\Desktop\dotnet\gproject\bin\Debug\net8.0\publish\gproject.runtimeconfig.json
