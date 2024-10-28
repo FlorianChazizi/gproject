@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../buildMultiTargeting/gproject.props" />
+  <Import Project="..\buildMultiTargeting\gproject.props" />
 </Project>

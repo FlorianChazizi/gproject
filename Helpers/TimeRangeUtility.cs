@@ -1,5 +1,3 @@
-using System;
-
 namespace MyWebApp.Helpers
 {
     public static class TimeRangeUtility

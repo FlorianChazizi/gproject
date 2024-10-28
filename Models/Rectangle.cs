@@ -1,4 +1,4 @@
-namespace MyWebApp.Models
+namespace gproject.Models // Ensure this namespace is correct
 {
     public class Rectangle
     {

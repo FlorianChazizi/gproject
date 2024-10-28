@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace MyWebApp.Controllers
+namespace gproject.Controllers
 {
     public class PageTwoController : Controller
     {

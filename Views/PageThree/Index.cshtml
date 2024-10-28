@@ -1,37 +1,29 @@
 @{
-    ViewData["Title"] = "Page Three";
+    ViewData["Title"] = "Page Three - Rectangle Area and Perimeter Calculator";
 }
 
-<div class="d-flex justify-content-center">
-    <h1 class="border-bottom"> Page Three </h1>
-</div>
+<h2>Rectangle Area and Perimeter Calculator</h2>
 
-<form method="post" asp-action="Calculate" class="container">
-    <div class=" row justify-content-center">
-       <div class="col-md-6">
-            <div class="form-group">
-                <label for="length">Length:</label>
-                <input type="number" class="form-control" id="length" name="length" step="0.01" required />
-            </div>
+<form method="post" class="container">
+    <div class="form-group">
+        <label for="length">Length:</label>
+        <input type="number" class="form-control" id="length" name="length" step="0.01" required />
+    </div>
 
-            <div class="form-group my-3">
-                <label for="width">Width:</label>
-                <input type="number" class="form-control" id="width" name="width" step="0.01" required />
-            </div>
+    <div class="form-group my-3">
+        <label for="width">Width:</label>
+        <input type="number" class="form-control" id="width" name="width" step="0.01" required />
+    </div>
 
-            <div class="form-group d-flex justify-content-center">
-                <button type="submit" class="btn btn-primary">Calculate Area and Perimeter</button>
-            </div>
-
-            @if (ViewBag.Area != null && ViewBag.Perimeter != null)
-            {
-                <div class="alert alert-info mt-3">
-                    <strong>Area:</strong> @ViewBag.Area <br />
-                    <strong>Perimeter:</strong> @ViewBag.Perimeter
-                </div>
-            }
-        </div> 
+    <div class="form-group">
+        <button type="submit" formaction="/PageThree/CalculateArea" class="btn btn-success">Calculate Area</button>
+        <button type="submit" formaction="/PageThree/CalculatePerimeter" class="btn btn-primary">Calculate Perimeter</button>
     </div>
 </form>
 
-
+@if (ViewBag.Result != null)
+{
+    <div class="alert alert-info mt-3">
+        @ViewBag.Result
+    </div>
+}

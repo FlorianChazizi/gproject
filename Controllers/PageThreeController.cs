@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using MyWebApp.Models;
+using gproject.Models; // This is the namespace for your Rectangle class
 
 namespace MyWebApp.Controllers
 {
@@ -13,16 +13,22 @@ namespace MyWebApp.Controllers
         }
 
         // POST method to calculate the area
-         public IActionResult Calculate(double length, double width)
+        [HttpPost]
+        public IActionResult CalculateArea(double length, double width)
         {
             Rectangle rectangle = new Rectangle(length, width);
             double area = rectangle.CalculateArea();
+            ViewBag.Result = $"The area of the rectangle is: {area}";
+            return View("Index");
+        }
+
+        // POST method to calculate the perimeter
+        [HttpPost]
+        public IActionResult CalculatePerimeter(double length, double width)
+        {
+            Rectangle rectangle = new Rectangle(length, width);
             double perimeter = rectangle.CalculatePerimeter();
-
-            // Store both results in ViewBag
-            ViewBag.Area = area;
-            ViewBag.Perimeter = perimeter;
-
+            ViewBag.Result = $"The perimeter of the rectangle is: {perimeter}";
             return View("Index");
         }
     }
