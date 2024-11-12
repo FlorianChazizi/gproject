@@ -1,26 +1,43 @@
 using Microsoft.AspNetCore.Mvc;
 using MyWebApp.Helpers;
+using System;
 
 namespace MyWebApp.Controllers
 {
-    public class PageFourController : Controller
+    public class PageFourthController : Controller
     {
         [HttpGet]
         public IActionResult Index()
         {
-        return View("~/Views/PageFourth/Index.cshtml");  // Explicitly point to the view file
+            return View();
         }
 
         [HttpPost]
         public IActionResult CalculateCommonTime(string timeRange1, string timeRange2)
         {
-            // Call the utility function to find the common time range
-            string result = TimeRangeUtility.GetCommonTimeRange(timeRange1, timeRange2);
+            try
+            {
+                // Parse the time ranges using TimeRange.ParseTimeRange
+                var range1 = TimeRange.ParseTimeRange(timeRange1);
+                var range2 = TimeRange.ParseTimeRange(timeRange2);
 
-            // Pass the result to the view via ViewBag
-            ViewBag.Result = result;
+                // Get the overlapping time range result
+                ViewBag.Result = TimeRange.GetOverlap(range1, range2);
+            }
+            catch (FormatException)
+            {
+                ViewBag.Result = "Invalid input format. Please use 'yyyy-MM-dd HH:mm - HH:mm'.";
+            }
+            catch (ArgumentException ex)
+            {
+                ViewBag.Result = ex.Message;
+            }
+            catch (Exception)
+            {
+                ViewBag.Result = "An unexpected error occurred.";
+            }
 
-            return View("~/Views/PageFourth/Index.cshtml");  // Explicitly point to the view file
+            return View("Index");
         }
     }
 }

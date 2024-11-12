@@ -1,39 +1,58 @@
+using System;
+using System.Globalization;
+
 namespace MyWebApp.Helpers
 {
-    public static class TimeRangeUtility
+    public class TimeRange
     {
-        public static string GetCommonTimeRange(string timeRange1, string timeRange2)
+        public DateTime Start { get; }
+        public DateTime End { get; }
+
+        public TimeRange(DateTime start, DateTime end)
         {
-            try
+            if (start > end)
+                throw new ArgumentException("Start time must be before or equal to end time.");
+
+            Start = start;
+            End = end;
+        }
+
+        public static string GetOverlap(TimeRange range1, TimeRange range2)
+        {
+            // Check if dates are different; if so, return "No Overlapping Time."
+            if (range1.Start.Date != range2.Start.Date)
             {
-                // Split the two time ranges into start and end times
-                string[] parts1 = timeRange1.Split(" - ");
-                string[] parts2 = timeRange2.Split(" - ");
-
-                // Parse the start and end times into DateTime
-                DateTime start1 = DateTime.Parse(parts1[0]);
-                DateTime end1 = DateTime.Parse(parts1[1]);
-
-                DateTime start2 = DateTime.Parse(parts2[0]);
-                DateTime end2 = DateTime.Parse(parts2[1]);
-
-                // Find the maximum of the start times and minimum of the end times
-                DateTime commonStart = start1 > start2 ? start1 : start2;
-                DateTime commonEnd = end1 < end2 ? end1 : end2;
-
-                // If there is no overlap, return "No overlap"
-                if (commonStart >= commonEnd)
-                {
-                    return "No overlapping time.";
-                }
-
-                // Return the overlapping time range in HH:mm format
-                return $"{commonStart:HH:mm} - {commonEnd:HH:mm}";
+                return "No Overlapping Time";
             }
-            catch (Exception ex)
+
+            // Calculate overlap
+            var overlapStart = range1.Start > range2.Start ? range1.Start : range2.Start;
+            var overlapEnd = range1.End < range2.End ? range1.End : range2.End;
+
+            // Check for actual overlap
+            if (overlapStart < overlapEnd)
             {
-                return $"Error: {ex.Message}";
+                return $"{overlapStart:HH:mm} - {overlapEnd:HH:mm}";
             }
+
+            return "No Overlapping Time";
+        }
+
+        public static TimeRange ParseTimeRange(string timeRangeInput)
+        {
+            // Expected format: "yyyy-MM-dd HH:mm - HH:mm"
+            var parts = timeRangeInput.Split(new[] { " - " }, StringSplitOptions.RemoveEmptyEntries);
+            if (parts.Length != 2)
+                throw new FormatException("Invalid time range format.");
+
+            // Parse date and start time (first part) and end time (second part)
+            var start = DateTime.ParseExact(parts[0].Trim(), "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture);
+            var end = DateTime.ParseExact($"{start:yyyy-MM-dd} {parts[1].Trim()}", "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture);
+
+            if (start > end)
+                throw new ArgumentException("Start time must be before or equal to end time.");
+
+            return new TimeRange(start, end);
         }
     }
 }
